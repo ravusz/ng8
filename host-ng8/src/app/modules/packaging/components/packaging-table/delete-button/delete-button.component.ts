@@ -5,6 +5,7 @@ import {
   PackagingService,
 } from "../../../services/packaging.service";
 import { MessageService } from "primeng/api";
+import { tap } from "rxjs/operators";
 
 @Component({
   selector: "app-delete-button",
@@ -17,7 +18,7 @@ export class DeleteButtonComponent {
     private confirmationService: ConfirmationService,
     private packagingService: PackagingService,
     private messageService: MessageService,
-  ) {}
+  ) { }
 
   onDelete() {
     this.confirmationService.confirm({
@@ -26,25 +27,28 @@ export class DeleteButtonComponent {
       rejectLabel: "Nie",
       message: `Czy chcesz usunąć ${this.item.name} ?`,
       accept: () => {
-        this.packagingService.delete(this.item.id).subscribe(
-          (data) => {
-            this.messageService.add({
-              severity: "success",
-              summary: `Pomyślnie usunięto ${data.name}`,
-              detail: `ID: ${data.id}`,
-            });
-          },
-          (error) => {
-            this.messageService.add({
-              severity: "error",
-              summary: "Błąd podczas usuwania",
-              detail:
-                error && error.message
-                  ? error.message
-                  : "Spróbuj ponownie później",
-            });
-          },
-        );
+        this.packagingService
+          .delete(this.item.id)
+          .pipe(tap(() => this.packagingService.getAll()))
+          .subscribe(
+            (data) => {
+              this.messageService.add({
+                severity: "success",
+                summary: `Pomyślnie usunięto ${data.name}`,
+                detail: `ID: ${data.id}`,
+              });
+            },
+            (error) => {
+              this.messageService.add({
+                severity: "error",
+                summary: "Błąd podczas usuwania",
+                detail:
+                  error && error.message
+                    ? error.message
+                    : "Spróbuj ponownie później",
+              });
+            },
+          );
       },
     });
   }

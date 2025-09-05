@@ -1,27 +1,6 @@
 {
   "packagings": [
     {
-      "code": "wewqeqw111",
-      "name": "ewqeqw",
-      "brand": "eqweqw111",
-      "availableQty": "2221",
-      "id": "7c56e0eb-7441-40de-8dce-3e9cd02f01f0"
-    },
-    {
-      "id": "478470f7-6dd9-4e5b-b3ef-61e0e4816464",
-      "code": "dsadas",
-      "name": "dasd",
-      "brand": "asdas",
-      "availableQty": 23232
-    },
-    {
-      "id": "6c298ffa-a327-4a1b-92be-c380dd23133e",
-      "code": "csdcsdrewr",
-      "name": "rwer",
-      "brand": "werwe",
-      "availableQty": 232
-    },
-    {
       "id": "6e67e72c-75b3-4ee0-bddf-d75a6f16c866",
       "code": "rwer",
       "name": "rwer",
@@ -41,6 +20,41 @@
       "name": "csdcsd",
       "brand": "ewe",
       "availableQty": "21"
+    },
+    {
+      "id": "a517291a-8018-474f-817f-26458645c949",
+      "code": "ffwe",
+      "name": "dewdwe",
+      "brand": "dede",
+      "availableQty": 0
+    },
+    {
+      "id": "4a20e079-aeb3-4b41-92cc-1fefc146e4af",
+      "code": "dwe",
+      "name": "wedwe",
+      "brand": "dwedwe",
+      "availableQty": "22"
+    },
+    {
+      "id": "4c6eadd0-8f37-491b-b981-0909e96cef36",
+      "code": "cdc",
+      "name": "cdcd",
+      "brand": "cdcd",
+      "availableQty": "23232"
+    },
+    {
+      "id": "370b817c-961b-4d58-9b6a-8251801bf83a",
+      "code": "cdc",
+      "name": "cdcd",
+      "brand": "cdc",
+      "availableQty": "3232"
+    },
+    {
+      "id": "fb527c33-daae-4e4f-8de0-3cc9a03a1556",
+      "code": "dsds",
+      "name": "dsds",
+      "brand": "dsds",
+      "availableQty": "12121"
     }
   ]
 }
