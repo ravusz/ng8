@@ -34,6 +34,6 @@ export class PackagingAddPageComponent {
           detail: error && error.message ? error.message : 'Spróbuj ponownie później'
         });
         console.log('Wystąpił błąd przy pobieraniu paczek:', error);
-      })
+      });
   }
 }

@@ -24,7 +24,7 @@ export class PackagingService {
     return this.http.get<Packaging[]>(this.apiUrl);
   }
 
-  getById(id: number): Observable<Packaging> {
+  getById(id: string): Observable<Packaging> {
     return this.http.get<Packaging>(`${this.apiUrl}/${id}`);
   }
 
@@ -32,7 +32,7 @@ export class PackagingService {
     return this.http.post<Packaging>(this.apiUrl, packaging);
   }
 
-  update(id: number, packaging: Packaging): Observable<Packaging> {
+  update(id: string, packaging: Packaging): Observable<Packaging> {
     return this.http.put<Packaging>(`${this.apiUrl}/${id}`, packaging);
   }
 
