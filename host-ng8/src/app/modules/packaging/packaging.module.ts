@@ -11,14 +11,24 @@ import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { RouterModule } from '@angular/router';
 import { AddNewPackagingButtonComponent } from './components/add-new-packaging-button/add-new-packaging-button.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { PackagingFormComponent } from './components/packaging-form/packaging-form.component';
+
 @NgModule({
-  declarations: [PackagingPageComponent, PackagingTableComponent, PackagingSearchComponent, PackagingAddPageComponent, PackagingEditPageComponent, AddNewPackagingButtonComponent],
+  declarations: [PackagingPageComponent, PackagingTableComponent, PackagingSearchComponent, PackagingAddPageComponent, PackagingEditPageComponent, AddNewPackagingButtonComponent, PackagingFormComponent],
   imports: [
+    HttpClientModule,
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule,
     PackagingRoutingModule,
     TableModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule,
   ]
 })
 export class PackagingModule { }

@@ -3,7 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -11,10 +15,13 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastModule
   ],
-  providers: [],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

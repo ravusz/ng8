@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { debounceTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-packaging-search',
   templateUrl: './packaging-search.component.html',
-  styleUrls: ['./packaging-search.component.scss']
 })
 export class PackagingSearchComponent implements OnInit {
 
-  constructor() { }
+  searchControl = new FormControl('');
+  @Output() search = new EventEmitter<string>();
 
   ngOnInit() {
+    this.searchControl.valueChanges
+      .pipe(
+        debounceTime(300) // czekaj 300ms po ostatnim wpisaniu
+      )
+      .subscribe(value => {
+        this.search.emit(value);
+      });
   }
-
 }

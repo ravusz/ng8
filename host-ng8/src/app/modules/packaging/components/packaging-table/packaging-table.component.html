@@ -1,24 +1,32 @@
-<p-table [value]="packagingList">
+<p-table [value]="packagingList" class="w-full">
   <ng-template pTemplate="header">
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Quantity</th>
-      <th>Actions</th>
+    <tr class="bg-gray-100 text-left">
+             <th class="p-3">Code</th>
+       <th class="p-3">Name</th>
+              <th class="p-3">Brand</th>
+      <th class="p-3">Quantity</th>
+      <th class="p-3">Actions</th>
     </tr>
   </ng-template>
   <ng-template pTemplate="body" let-item>
-    <tr>
-      <td class="px-4 py-2 text-left">{{ item.id }}</td>
-      <td>{{ item.name }}</td>
-      <td>{{ item.quantity }}</td>
-      <td class="text-center space-x-2">
-        <button 
-        pButton type="button"
-            class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded"
-        label="Edit" icon="pi pi-pencil" 
-        [routerLink]="['/packaging', item.id, 'edit']"></button>
-        <button pButton type="button" label="Delete" icon="pi pi-trash" class="p-button-danger"></button>
+    <tr class="border-b border-gray-200">
+            <td class="p-3">{{ item.code }}</td>
+                        <td class="p-3">{{ item.name }}</td>
+
+      <td class="p-3">{{ item.brand }}</td>
+      <td class="p-3">{{ item.availableQty }}</td>
+      <td class="p-3 flex gap-2">
+        <p-button 
+          type="button"
+          icon="pi pi-pencil" 
+          class="p-button-sm p-button-rounded p-button-text"
+          [routerLink]="['/packaging', item.id, 'edit']">
+        </p-button>
+        <p-button 
+          type="button"  
+          icon="pi pi-trash" 
+          class="p-button-sm p-button-rounded p-button-danger p-button-text">
+        </p-button>
       </td>
     </tr>
   </ng-template>

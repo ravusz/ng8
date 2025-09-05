@@ -1,0 +1,44 @@
+<form [formGroup]="packagingForm"  class="fluid grid gap-4 p-4 bg-white shadow-lg rounded-lg max-w-3xl mx-auto">
+
+   <div class="col-12">
+    <h2 class="text-xl font-bold mb-2">Dodaj Opakowanie</h2>
+    <p class="text-gray-500 mb-4">Wypełnij wszystkie wymagane pola.</p>
+  </div>
+
+   <div class="field col-12 md:col-6">
+    <label for="code" class="font-medium">Code</label>
+    <input id="code" type="text" pInputText formControlName="code" class="w-full border border-gray-300 rounded p-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+    <small *ngIf="packagingForm.get('code').invalid && packagingForm.get('code').touched" class="text-red-500">
+      Code jest wymagany
+    </small>
+  </div>
+
+   <div class="field col-12 md:col-6">
+    <label for="name" class="font-medium">Name</label>
+    <input id="name" type="text" pInputText formControlName="name" class="w-full border border-gray-300 rounded p-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+    <small *ngIf="packagingForm.get('name').invalid && packagingForm.get('name').touched" class="text-red-500">
+      Name jest wymagany
+    </small>
+  </div>
+
+   <div class="field col-12 md:col-6">
+    <label for="brand" class="font-medium">Brand</label>
+    <input id="brand" type="text" pInputText formControlName="brand" class="w-full border border-gray-300 rounded p-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+    <small *ngIf="packagingForm.get('brand').invalid && packagingForm.get('brand').touched" class="text-red-500">
+      Brand jest wymagany
+    </small>
+  </div>
+
+   <div class="field col-12 md:col-6">
+    <label for="availableQty" class="font-medium">Available Quantity</label>
+    <input id="availableQty" type="number" pInputText formControlName="availableQty" class="w-full border border-gray-300 rounded p-2 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+    <small *ngIf="packagingForm.get('availableQty').invalid && packagingForm.get('availableQty').touched" class="text-red-500">
+      Wprowadź poprawną ilość
+    </small>
+  </div>
+
+   <div class="col-12 flex  ">
+    <button pButton type="button" label="Zapisz" class="p-button-success" (click)="submitForm()"></button>
+  </div>
+
+</form>

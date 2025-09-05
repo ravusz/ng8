@@ -10,12 +10,11 @@ interface Packaging {
 @Component({
   selector: 'app-packaging-table',
   templateUrl: './packaging-table.component.html',
-  styleUrls: ['./packaging-table.component.scss']
 })
 export class PackagingTableComponent implements OnInit {
 
   packagingList: Packaging[] = [];
-  globalFilter: string = '';
+  globalFilter = '';
 
   ngOnInit() {
     this.packagingList = [
