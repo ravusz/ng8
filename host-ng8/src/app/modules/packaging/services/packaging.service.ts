@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs";
 
 export interface Packaging {
   id?: string;
@@ -10,15 +10,13 @@ export interface Packaging {
   availableQty: number;
 }
 
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class PackagingService {
+  private apiUrl = "http://localhost:3001/packagings";
 
-  private apiUrl = 'http://localhost:3001/packagings';
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getAll(): Observable<Packaging[]> {
     return this.http.get<Packaging[]>(this.apiUrl);

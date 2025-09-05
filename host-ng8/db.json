@@ -13,6 +13,13 @@
       "name": "dasd",
       "brand": "asdas",
       "availableQty": 23232
+    },
+    {
+      "id": "6c298ffa-a327-4a1b-92be-c380dd23133e",
+      "code": "csdcsdrewr",
+      "name": "rwer",
+      "brand": "werwe",
+      "availableQty": 232
     }
   ]
 }

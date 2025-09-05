@@ -1,1 +1,6 @@
- <app-packaging-form (submit)="onSubmit($event)" [packaging]="packaging"></app-packaging-form>
+<app-packaging-header [title]="'Edytuj element'"></app-packaging-header>
+
+<app-packaging-form
+  (submit)="onSubmit($event)"
+  [packaging]="packaging"
+></app-packaging-form>
