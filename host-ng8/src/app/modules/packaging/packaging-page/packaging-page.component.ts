@@ -1,28 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { PackagingService } from '../services/packaging.service';
+import { Packaging, PackagingService } from '../services/packaging.service';
 
 @Component({
   selector: 'app-packaging-page',
   templateUrl: './packaging-page.component.html',
 })
 export class PackagingPageComponent implements OnInit {
+  packagingList: Packaging[] = [];
+  allPackagingList: Packaging[] = [];
 
   constructor(private packagingService: PackagingService) { }
 
   ngOnInit() {
     this.packagingService.getAll().subscribe(
       data => {
-        console.log('Lista paczek:', data);
-      },
-      error => {
-        console.log('Wystąpił błąd przy pobieraniu paczek:', error);
-        // możesz np. pokazać alert lub komunikat w UI
+        this.packagingList = data;
+        this.allPackagingList = data;
       }
     );
   }
 
-  onSearch(event) {
-    console.log('event z rodzica:', event);
+
+  onSearch(searchTerm: string) {
+    if (!searchTerm) {
+      this.packagingList = [...this.allPackagingList];
+    } else {
+      const term = searchTerm.toLowerCase();
+      this.packagingList = this.allPackagingList.filter(({ code, name }) =>
+        code.toLowerCase().includes(term) ||
+        name.toLowerCase().includes(term)
+      );
+    }
   }
 
 }

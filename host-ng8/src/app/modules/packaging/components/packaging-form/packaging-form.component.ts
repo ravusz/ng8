@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { PackagingService } from '../../services/packaging.service';
 import { Packaging } from '../../services/packaging.service';
 
 @Component({

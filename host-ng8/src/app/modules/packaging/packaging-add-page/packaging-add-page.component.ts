@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { PackagingService, Packaging } from '../services/packaging.service';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
-import { v4 as uuidv4 } from 'uuid';
-
+import * as uuid from 'uuid';
 @Component({
   selector: 'app-packaging-add-page',
   templateUrl: './packaging-add-page.component.html',
@@ -14,13 +13,12 @@ export class PackagingAddPageComponent {
 
   onSubmit(packaging: Packaging) {
     const newPackaging: Packaging = {
-      id: uuidv4(),
+      id: uuid.v4(),
       ...packaging
     };
 
     this.packagingService.create(newPackaging).subscribe(
       data => {
-
         this.messageService.add({
           severity: 'success',
           summary: `Pomyślnie dodano ${data.name}`,

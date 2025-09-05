@@ -36,7 +36,7 @@ export class PackagingService {
     return this.http.put<Packaging>(`${this.apiUrl}/${id}`, packaging);
   }
 
-  delete(id: number): Observable<any> {
+  delete(id: string): Observable<any> {
     return this.http.delete(`${this.apiUrl}/${id}`);
   }
 }

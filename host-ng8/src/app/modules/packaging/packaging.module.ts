@@ -16,9 +16,10 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PackagingFormComponent } from './components/packaging-form/packaging-form.component';
+import { DeleteButtonComponent } from './components/packaging-table/delete-button/delete-button.component';
 
 @NgModule({
-  declarations: [PackagingPageComponent, PackagingTableComponent, PackagingSearchComponent, PackagingAddPageComponent, PackagingEditPageComponent, AddNewPackagingButtonComponent, PackagingFormComponent],
+  declarations: [PackagingPageComponent, PackagingTableComponent, PackagingSearchComponent, PackagingAddPageComponent, PackagingEditPageComponent, AddNewPackagingButtonComponent, PackagingFormComponent, DeleteButtonComponent],
   imports: [
     HttpClientModule,
     CommonModule,

@@ -14,7 +14,7 @@ export class PackagingSearchComponent implements OnInit {
   ngOnInit() {
     this.searchControl.valueChanges
       .pipe(
-        debounceTime(300) // czekaj 300ms po ostatnim wpisaniu
+        debounceTime(300)
       )
       .subscribe(value => {
         this.search.emit(value);
