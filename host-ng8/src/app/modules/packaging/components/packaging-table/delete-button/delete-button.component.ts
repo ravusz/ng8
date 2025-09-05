@@ -17,7 +17,7 @@ export class DeleteButtonComponent {
     private confirmationService: ConfirmationService,
     private packagingService: PackagingService,
     private messageService: MessageService,
-  ) { }
+  ) {}
 
   onDelete() {
     this.confirmationService.confirm({

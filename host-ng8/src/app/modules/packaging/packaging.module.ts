@@ -16,8 +16,9 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { PackagingFormComponent } from "./components/packaging-form/packaging-form.component";
 import { DeleteButtonComponent } from "./components/packaging-table/delete-button/delete-button.component";
-import { PackagingHeaderComponent } from './components/packaging-header/packaging-header.component';
-import { ParagraphComponent } from '../../components/paragraph/paragraph.component';
+import { PackagingHeaderComponent } from "./components/packaging-header/packaging-header.component";
+import { ParagraphComponent } from "../../components/paragraph/paragraph.component";
+import { FormFieldComponent } from "../../components/form-field/form-field.component";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ParagraphComponent } from '../../components/paragraph/paragraph.compone
     PackagingFormComponent,
     DeleteButtonComponent,
     PackagingHeaderComponent,
-    ParagraphComponent
+    ParagraphComponent,
+    FormFieldComponent,
   ],
   imports: [
     HttpClientModule,
@@ -43,4 +45,4 @@ import { ParagraphComponent } from '../../components/paragraph/paragraph.compone
     InputTextModule,
   ],
 })
-export class PackagingModule { }
+export class PackagingModule {}

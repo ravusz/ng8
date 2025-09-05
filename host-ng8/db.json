@@ -3,8 +3,8 @@
     {
       "code": "wewqeqw111",
       "name": "ewqeqw",
-      "brand": "eqweqw",
-      "availableQty": 323232,
+      "brand": "eqweqw111",
+      "availableQty": "2221",
       "id": "7c56e0eb-7441-40de-8dce-3e9cd02f01f0"
     },
     {
@@ -20,6 +20,27 @@
       "name": "rwer",
       "brand": "werwe",
       "availableQty": 232
+    },
+    {
+      "id": "6e67e72c-75b3-4ee0-bddf-d75a6f16c866",
+      "code": "rwer",
+      "name": "rwer",
+      "brand": "rwerw",
+      "availableQty": "3232"
+    },
+    {
+      "id": "33dd754d-c3b9-491a-b4da-30197d1e8652",
+      "code": "wer123",
+      "name": "dsds",
+      "brand": "dsds",
+      "availableQty": "2121"
+    },
+    {
+      "id": "57017a3a-6b13-4da7-9833-1e44a59df955",
+      "code": "2121",
+      "name": "csdcsd",
+      "brand": "ewe",
+      "availableQty": "21"
     }
   ]
 }

@@ -1,11 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-paragraph',
-  templateUrl: './paragraph.component.html',
+  selector: "app-paragraph",
+  templateUrl: "./paragraph.component.html",
 })
-export class ParagraphComponent {
-
-
-
-}
+export class ParagraphComponent {}
