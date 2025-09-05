@@ -17,12 +17,13 @@ import { Packaging } from "../../services/packaging.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PackagingFormComponent implements OnInit, OnChanges {
+  @Input() title: string;
   @Input() packaging: Packaging;
   @Output() submit = new EventEmitter<Packaging>();
 
   packagingForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.packagingForm = this.fb.group({

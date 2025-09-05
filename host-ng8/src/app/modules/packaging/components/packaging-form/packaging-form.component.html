@@ -1,11 +1,10 @@
 <form [formGroup]="packagingForm">
   <div class="col-12">
-    <h2 class="text-xl font-bold mb-2">Dodaj Opakowanie</h2>
+    <h2 class="text-xl font-bold mb-2">{{title}}</h2>
     <p class="text-gray-500 mb-4">Wypełnij wszystkie wymagane pola.</p>
   </div>
 
-  <!-- Pole Kod -->
-  <app-form-field
+   <app-form-field
     id="code"
     type="text"
     label="Kod"
@@ -14,8 +13,7 @@
     [errorMessage]="'Kod jest wymagany'"
   ></app-form-field>
 
-  <!-- Pole Nazwa -->
-  <app-form-field
+   <app-form-field
     id="name"
     type="text"
     label="Nazwa"
@@ -24,8 +22,7 @@
     [errorMessage]="'Nazwa jest wymagana'"
   ></app-form-field>
 
-  <!-- Pole Marka -->
-  <app-form-field
+   <app-form-field
     id="brand"
     type="text"
     label="Marka"
@@ -34,8 +31,7 @@
     [errorMessage]="'Marka jest wymagana'"
   ></app-form-field>
 
-  <!-- Pole Ilość dostępna -->
-  <app-form-field
+   <app-form-field
     id="availableQty"
     type="number"
     label="Ilość dostępna"
@@ -44,14 +40,12 @@
     [errorMessage]="'Wprowadź poprawną ilość'"
   ></app-form-field>
 
-  <!-- Przycisk Zapisz -->
-  <div class="col-12 flex">
-    <button
+     <button
       pButton
       type="button"
       label="Zapisz"
       class="p-button-success"
       (click)="submitForm()"
+      class="w-full"
     ></button>
-  </div>
-</form>
+ </form>

@@ -5,6 +5,7 @@ import { FormControl } from "@angular/forms";
 @Component({
   selector: "app-form-field",
   templateUrl: "./form-field.component.html",
+  styleUrls: ["./form-field.component.scss"],
 })
 export class FormFieldComponent implements OnInit {
   @Input() id: string;
@@ -16,8 +17,6 @@ export class FormFieldComponent implements OnInit {
 
   @Input() packagingForm: FormGroup;
   control: FormControl;
-
-  constructor() {}
 
   ngOnInit() {
     this.control = this.packagingForm.get(this.id) as FormControl;

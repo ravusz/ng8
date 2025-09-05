@@ -1,4 +1,4 @@
-<div class="field">
+<div class="field" [ngClass]="{'has-error': packagingForm.get(id)?.invalid && packagingForm.get(id)?.touched}">
   <label [for]="id" class="font-medium">{{ label }}</label>
   <input
     [id]="id"
@@ -9,7 +9,7 @@
     class="w-full"
     [formControl]="control"
   />
-  <small *ngIf="packagingForm.get(id).invalid && packagingForm.get(id).touched">
+  <small *ngIf="packagingForm.get(id)?.invalid && packagingForm.get(id)?.touched">
     {{ errorMessage }}
   </small>
 </div>

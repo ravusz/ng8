@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "app-packaging-header",
@@ -6,5 +6,4 @@ import { Component, Input } from "@angular/core";
   styleUrls: ["./packaging-header.component.scss"],
 })
 export class PackagingHeaderComponent {
-  @Input() title: string;
 }
