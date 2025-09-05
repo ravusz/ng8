@@ -23,7 +23,7 @@ export class PackagingFormComponent implements OnInit, OnChanges {
 
   packagingForm: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
     this.packagingForm = this.fb.group({

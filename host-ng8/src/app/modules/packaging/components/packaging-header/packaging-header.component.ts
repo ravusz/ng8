@@ -5,5 +5,4 @@ import { Component } from "@angular/core";
   templateUrl: "./packaging-header.component.html",
   styleUrls: ["./packaging-header.component.scss"],
 })
-export class PackagingHeaderComponent {
-}
+export class PackagingHeaderComponent {}
