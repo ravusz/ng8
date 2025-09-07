@@ -1,22 +1,12 @@
 {
-  "name": "monorepo",
+  "name": "ng",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "install:all": "npm install",
-    "start:all": "npm-run-all --parallel start:app start:lib",
-    "start:app": "set NODE_OPTIONS=--openssl-legacy-provider && npm run start --workspace=host-ng8",
-    "start:lib": "set NODE_OPTIONS=--openssl-legacy-provider && npm run start --workspace=angular-elements-example"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
-    "@angular/cli": "8.3.29",
-    "npm-run-all": "^4.1.5"
+    "@angular/cli": "8.3.29"
   }
 }
