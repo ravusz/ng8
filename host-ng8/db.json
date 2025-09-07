@@ -55,6 +55,13 @@
       "name": "dsds",
       "brand": "dsds",
       "availableQty": "12121"
+    },
+    {
+      "id": "d785cd6e-c432-4dff-9ead-03f26ec02add",
+      "code": "csdc",
+      "name": "csdcs",
+      "brand": "cdscs",
+      "availableQty": "23232"
     }
   ]
 }
