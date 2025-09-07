@@ -28,3 +28,19 @@ Go back to the host-ng8 directory and start the development server:
 
 cd ../host-ng8
 npm run start
+
+
+## 5. Usage of Angular 20 component in host-ng8
+
+<main class="p-4">
+  <mini-stats-widget [description]="'Angular 20.2.0'"></mini-stats-widget>
+  <router-outlet></router-outlet>
+</main>
+<p-toast></p-toast>
+<p-confirmDialog icon="pi pi-exclamation-triangle"></p-confirmDialog>
+
+Note: In host-ng8/angular.json, the scripts section includes a link to the Angular 20 component built in remote-details:
+
+"scripts": [
+  "../remote-details/dist/remote-details/browser/main.js"
+]

@@ -62,6 +62,13 @@
       "name": "csdcs",
       "brand": "cdscs",
       "availableQty": "23232"
+    },
+    {
+      "id": "26999f29-a1f7-498b-8537-6ba9e6b86eac",
+      "code": "rrr",
+      "name": "rrr",
+      "brand": "rrr",
+      "availableQty": "0"
     }
   ]
 }
