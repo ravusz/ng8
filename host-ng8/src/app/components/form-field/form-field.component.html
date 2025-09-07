@@ -1,0 +1,15 @@
+<div class="field" [ngClass]="{'has-error': packagingForm.get(id)?.invalid && packagingForm.get(id)?.touched}">
+  <label [for]="id" class="font-medium">{{ label }}</label>
+  <input
+    [id]="id"
+    [type]="type"
+    pInputText
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    class="w-full"
+    [formControl]="control"
+  />
+  <small *ngIf="packagingForm.get(id)?.invalid && packagingForm.get(id)?.touched">
+    {{ errorMessage }}
+  </small>
+</div>

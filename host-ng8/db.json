@@ -1,0 +1,60 @@
+{
+  "packagings": [
+    {
+      "id": "6e67e72c-75b3-4ee0-bddf-d75a6f16c866",
+      "code": "rwer",
+      "name": "rwer",
+      "brand": "rwerw",
+      "availableQty": "3232"
+    },
+    {
+      "id": "33dd754d-c3b9-491a-b4da-30197d1e8652",
+      "code": "wer123",
+      "name": "dsds",
+      "brand": "dsds",
+      "availableQty": "2121"
+    },
+    {
+      "id": "57017a3a-6b13-4da7-9833-1e44a59df955",
+      "code": "2121",
+      "name": "csdcsd",
+      "brand": "ewe",
+      "availableQty": "21"
+    },
+    {
+      "id": "a517291a-8018-474f-817f-26458645c949",
+      "code": "ffwe",
+      "name": "dewdwe",
+      "brand": "dede",
+      "availableQty": 0
+    },
+    {
+      "id": "4a20e079-aeb3-4b41-92cc-1fefc146e4af",
+      "code": "dwe",
+      "name": "wedwe",
+      "brand": "dwedwe",
+      "availableQty": "22"
+    },
+    {
+      "id": "4c6eadd0-8f37-491b-b981-0909e96cef36",
+      "code": "cdc",
+      "name": "cdcd",
+      "brand": "cdcd",
+      "availableQty": "23232"
+    },
+    {
+      "id": "370b817c-961b-4d58-9b6a-8251801bf83a",
+      "code": "cdc",
+      "name": "cdcd",
+      "brand": "cdc",
+      "availableQty": "3232"
+    },
+    {
+      "id": "fb527c33-daae-4e4f-8de0-3cc9a03a1556",
+      "code": "dsds",
+      "name": "dsds",
+      "brand": "dsds",
+      "availableQty": "12121"
+    }
+  ]
+}

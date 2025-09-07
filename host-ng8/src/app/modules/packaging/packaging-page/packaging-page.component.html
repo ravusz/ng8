@@ -1,0 +1,13 @@
+<div
+  class="flex flex-column md:flex-row justify-content-between align-items-center gap-3 mb-4"
+>
+  <app-packaging-search
+    class="flex-1"
+    (search)="onSearch($event)"
+  ></app-packaging-search>
+  <app-add-new-packaging-button></app-add-new-packaging-button>
+</div>
+
+<div class="w-full">
+  <app-packaging-table [packagingList]="packagingList$ | async"></app-packaging-table>
+</div>
