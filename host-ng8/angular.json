@@ -35,7 +35,7 @@
               "node_modules/primeicons/primeicons.css"
             ],
             "scripts": [
-              "../packages/remote-details/dist/remote-details/browser/main.js"
+              "../remote-details/dist/remote-details/browser/main.js"
             ]
           },
           "configurations": {
